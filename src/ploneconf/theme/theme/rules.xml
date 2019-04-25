@@ -37,6 +37,22 @@
   <!-- full-width breadcrumb -->
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
 
+  <!-- 1- Drop from plone content, 2 - just for annonymus, 3- just for non administrators -->
+  <!-- drop css:content="#portal-breadcrumbs" />
+  
+  <drop css:content="#portal-breadcrumbs"
+    css:if-content=".userrole-anonymous"
+    />
+  <drop css:content="#portal-breadcrumbs"
+    css:if-not-content=".userrole-manager"
+   /--> 
+   
+   <!-- if is not the front page-->
+   <drop
+    css:theme="#front-page-slider"
+    css:if-not-content=".section-front-page"
+    />
+
   <!-- Central column -->
   <replace css:theme="#content-container" method="raw">
 
