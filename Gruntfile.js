@@ -48,6 +48,7 @@ module.exports = function (grunt) {
                 tasks: ['less', 'postcss']
             }
         },
+        // browserSync:html modification
         browserSync: {
             html: {
                 bsFiles: {
@@ -66,6 +67,7 @@ module.exports = function (grunt) {
                     },
                 }
             },
+            // plone less
             plone: {
                 bsFiles: {
                     src : [
