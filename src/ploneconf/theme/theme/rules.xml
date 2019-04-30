@@ -65,10 +65,11 @@
     css:if-not-content=".userrole-manager"
    /--> 
    <!-- Front Page Slider -->
+   <!-- href="/slider-images/@@slider-images" -->
     <replace
       css:theme="#carousel-example-generic"
       css:content="#carousel-example-generic"
-      href="/slider-images/@@slider-images"
+      href="" 
       css:if-content=".section-front-page"
     />
    <!-- if is not the front page-->
