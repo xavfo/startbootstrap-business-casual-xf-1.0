@@ -64,7 +64,13 @@
   <drop css:content="#portal-breadcrumbs"
     css:if-not-content=".userrole-manager"
    /--> 
-   
+   <!-- Front Page Slider -->
+    <replace
+      css:theme="#carousel-example-generic"
+      css:content="#carousel-example-generic"
+      href="/slider-images/@@slider-images"
+      css:if-content=".section-front-page"
+    />
    <!-- if is not the front page-->
    <drop
     css:theme="#front-page-slider"
