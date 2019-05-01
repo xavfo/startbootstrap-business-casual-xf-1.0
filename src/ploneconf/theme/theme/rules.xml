@@ -69,14 +69,14 @@
     <replace
       css:theme="#carousel-example-generic"
       css:content="#carousel-example-generic"
-      href="" 
-      css:if-content=".section-front-page"
+      href="/slider-images/@@slider-images" 
+      css:if-not-content=".section-front-page"
     />
    <!-- if is not the front page-->
-   <drop
+   <!-- drop
     css:theme="#front-page-slider"
     css:if-not-content=".section-front-page"
-    />
+    /-->
 
   <!-- Central column -->
   <replace css:theme="#content-container" method="raw">
